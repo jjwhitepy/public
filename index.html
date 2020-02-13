@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>First Page</title>
+    <link rel="stylesheet" href="./stylesheets/Normalize.css">
+    <script src="https://kit.fontawesome.com/c3d61a859a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>This is my HEADER element of my INDEX PAGE</header>
+    <h1>HOME (as an h1 element)</h1>
+
+   
+    <p>This is a web page.</p>
+    <div>
+      <!--Demonstration of the two methods each for bolding and italics-->
+      <section>
+        <i class="fas fa-exclamation-circle"><h2> Sematics for bold and italics</h2></i>
+        <p>This is still a <strong>web page</strong> but uses the STRONG tag. By comparison, this <b>web page</b> uses the 'b' tag.
+        Similarly, this is the different in <em>EMPHASIS</em> and <i>ITALICS</i> using the 'em' and 'i' tags. The difference is sematics, which appear to be a non-issue for browsers, but would change how a screen reader treats the enclosed characters or phrase.</p>
+      </section>
+      <!-- Relative compared to absolute web paths-->
+      <section>
+        <!--Relative path link on the same site-->
+        <h2>Relative vs. Absolute Links (h2 element)</h2>
+        <p>This is a relative <a href="aboutPage.html">link</a> to my ABOUT page.</p>
+        <p>This is also a relative <a href="aboutPage.html" target="_blank">link</a> to my ABOUT page, but will open the page in a new window.</p>
+        <p>While <a href="https://www.reddit.com">this</a> is an absolute path link to Reddit.</p>      
+      </section>
+    </div>
+    <!-- ALL ABOUT LISTS -->
+    <div>      
+      <section>
+        <!-- Unordered lists, like a to-do list -->
+        <h3>Unordered list</h3>
+        <ul>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+          <li>Fourth Item</li>
+        </ul>
+        <!-- ORDERED LIST, like a series of directions -->
+        <h3>Ordered list</h3>
+        <ol>
+          <li>First do this</li>
+          <li>Then do that</li>
+          <li>Next, do this other thing</li>
+          <li>Fourth, bake at 350 degrees for an hour</li>
+          <li>Finally we all head over to a party at Warren's</li>          
+        </ol>
+        <p>Ordered lists also have attributes: 
+          <ul>
+            <li>START (to set starting value)</li>
+            <li>REVERSE (to reverse the sort oder)</li>
+            <li>VALUE (to change the value assigned to an list item in the list)</li>
+          </ul>
+        <!-- There are also descriptive lists, like a glossary entry -->
+        <h3>Descriptive List</h3>
+        <dl>
+          <dt>Definition Term or dt</dt>
+            <dd>Definition Description or dd</dd>
+        </dl>
+        <!-- Nested Lists -->
+        <h3>Nested List</h3>
+        <p>where an ordered  or unordered list is added as a list item (LI) to a higher level UL or OL. List item MUST follow OL or UL, but can contain its own OL or UL element.</p>
+        <ul>
+          <li>First do this</li>
+          <li>Then do that</li>
+          <li>Next, do these other things:</li>
+            <ul>
+              <li>First Item</li>
+              <li>Second Item</li>
+              <li>Third Item</li>
+              <li>Fourth Item</li>
+            </ul>
+          <li>Fourth, set on fire then wait to cool</li>
+          <li>Finally, Frank said there is a party at Warren's</li>          
+        </ul>  
+      </section>   
+    </div>
+    <!-- Adding images-->  
+    <div>      
+      <figure>
+        <img src = "./images/us-at_dbg2-small.JPG" alt="Image alt text" width="25%">
+        <figcaption>"No idea why the image is rotated 180 degrees"</figcaption>
+      </figure>
+    </div>
+    <div>
+      <!-- Tables -->
+      <h2>
+        Go to <a href="tablePage.html">Table Page</a>
+      </h2>
+    </div>
+    <div>
+      <!-- Icons -->
+      <a href="https://www.python.org" aria-label="python"><i class="fab fa-python fa-2x" title="Python"></i></a>
+      <a href="https://github.com/jjwhitepy/demo" aria-label="My Github"><i class="fab fa-github fa-2x" title="My Github repo (requires sign-in)"></i></a>
+      <a href="https://www.linkedin.com/in/judson-white-44329b126/" aria-label="My Linked In"><i class="fab fa-linkedin fa-2x" title="My Linked In profile"></i></a>
+      <a href="https://developers.arcgis.com/javascript/" aria-label="Javascript"><i class="fab fa-js fa-2x" title="ESRI javascript API"></i></a>
+    </div>
+  </body>
+  <br>
+  <br>
+  <footer>
+    <a href="tablePage.html">Tables</a>
+    <a href="aboutPage.html">About</a> 
+    <a href ="wikipedia.org">Go To Wikipedia!</a>
+  </footer>
+</html>
